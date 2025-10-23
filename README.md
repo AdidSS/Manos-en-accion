@@ -1,2 +1,2 @@
-# Manos-en-acci-n
+# Manos en acción
 Reconocimiento de Lenguaje de Señas con Aprendizaje profundo
