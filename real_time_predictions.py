@@ -15,7 +15,7 @@ import sys
 
 # Configuración
 RUTA_MODELO_SEG = 'best_seg.pt'
-RUTA_MODELO_CLASIF = 'efficientNet_sign_language_seg.pth'
+RUTA_MODELO_CLASIF = 'efficientNet_final_pro.pth'
 IMG_SIZE = 224
 CONF_THRESHOLD_SEG = 0.5
 FPS_TARGET = 30
@@ -23,7 +23,7 @@ PREDICTION_INTERVAL = 0.3  # Aumentado para dar más tiempo
 
 CLASS_NAMES = sorted([
     'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M',
-    'N', 'O', 'P', 'Q', 'R', 'S', 'Space', 'T', 'U',
+    'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U',
     'V', 'W', 'X', 'Y', 'Z'
 ])
 NUM_CLASSES = len(CLASS_NAMES)
@@ -201,7 +201,7 @@ def mostrar_camara():
     
     # Configurar cámara
     print("Iniciando cámara")
-    cam = cv2.VideoCapture(0) # 0 es la de la compu
+    cam = cv2.VideoCapture(1) # 0 es la de la compu
                               # 1 es la de la webcam
     
     if not cam.isOpened():
@@ -209,8 +209,8 @@ def mostrar_camara():
         sys.exit(1)
 
     # Optimizar configuración de cámara
-    cam.set(cv2.CAP_PROP_FRAME_WIDTH, 640)
-    cam.set(cv2.CAP_PROP_FRAME_HEIGHT, 640)
+    cam.set(cv2.CAP_PROP_FRAME_WIDTH, 1280)
+    cam.set(cv2.CAP_PROP_FRAME_HEIGHT, 720)
     cam.set(cv2.CAP_PROP_FPS, FPS_TARGET)
     cam.set(cv2.CAP_PROP_BUFFERSIZE, 1)
 
