@@ -13,4 +13,4 @@ Victor Adid Salgado Santana A01710023
 | manos__en_accion_modeling.ipynb   | Entrenamiento del modelo final |
 | manos_en_accion_predictions.ipynb   | Evaluación de las clasificaciones del modelo|
 | real_time_predictions.py   | Clasificaciones en tiempo real con pipeline de segmentación (yolov8) y clasificación (efficientnet b0)|
-| Manos_en_acción_Reconocimiento_del_lenguaje_de_señas.pdf| Reporte Final |
+| Manos_en_acción_Reconocimiento_de_lengua_de_señas.pdf| Reporte Final |
