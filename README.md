@@ -3,6 +3,7 @@ Reconocimiento de Lenguaje de Señas con Aprendizaje profundo
 
 
 Victor Adid Salgado Santana A01710023
+![Presentando Manos en Acción](assets/logo.png)
 
 | **Archivo**   | **Descripción**                                              |
 |---------------|--------------------------------------------------------------|
