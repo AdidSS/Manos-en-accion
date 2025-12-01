@@ -14,3 +14,6 @@ Victor Adid Salgado Santana A01710023
 | manos_en_accion_predictions.ipynb   | Evaluación de las clasificaciones del modelo final|
 | real_time_predictions.py   | Clasificaciones en tiempo real con pipeline de segmentación (yolov8) y clasificación (efficientnet b0)|
 | Manos_en_acción_Reconocimiento_de_lengua_de_señas.pdf| Reporte Final |
+| best_seg.pt| Pesos del modelo de segmentación Yolo v8 |
+| efficientNet_final_pro.pth | Pesos del modelo de clasificación EfficientNet B0 |
+
