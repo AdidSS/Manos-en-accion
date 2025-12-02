@@ -54,7 +54,13 @@ Para ejecutar este proyecto en tu entorno local, sigue estos pasos:
     pip install -r requirements.txt
    ```
 
-#### Ejecución:
+### Ejecución:
+En el Script real_time_predictions.py seleccionar el índice de la cámara que vas a usar. Debido a que se estaba utilizando en una webcam, el índice de VideoCapture recibe un 1. Si vas a utilizar la cámara de tu laptop generalmente es el 0. Asegúrate de colocar el índice correcto de tu cámara para no tener errores de ejecución.
+   ```python
+    cam = cv2.VideoCapture(1) # 0 es la de la compu
+                              # 1 es la de la webcam
+   ```
+
 Clasificaciones en tiempo real:
 
 ```bash
