@@ -5,6 +5,7 @@ Reconocimiento de Lenguaje de Señas con Aprendizaje profundo
 Victor Adid Salgado Santana A01710023
 ![Presentando Manos en Acción](assets/logo.png)
 
+## Descripción de repositorio
 | **Archivo**   | **Descripción**                                              |
 |---------------|--------------------------------------------------------------|
 | get_signs_loop.py     | Código para tomar fotos de cada seña y armar el dataset propio de LSM          |
@@ -17,4 +18,47 @@ Victor Adid Salgado Santana A01710023
 | Manos_en_acción_Reconocimiento_de_lengua_de_señas.pdf| Reporte Final |
 | best_seg.pt| Pesos del modelo de segmentación Yolo v8 |
 | efficientNet_final_pro.pth | Pesos del modelo de clasificación EfficientNet B0 |
+
+## Instalación y Ejecución
+
+Para ejecutar este proyecto en tu entorno local, sigue estos pasos:
+
+### Prerrequisitos
+
+- pip (gestor de paquetes de Python)
+- Git (opcional, para clonar el repositorio)
+
+### Configuración del entorno
+
+1. Clona el repositorio (o descárgalo como ZIP):
+   ```bash
+   git clone https://github.com/AdidSS/Manos-en-accion.git
+   cd Manos-en-accion
+   ```
+2. Crea un entorno virtual:
+    En Windows:
+
+   ```bash
+    python -m venv venv
+    venv\Scripts\activate
+   ```
+
+    En macOS/Linux:
+   ```bash
+    python3 -m venv venv
+    source venv/bin/activate
+   ```
+
+3. Instala las dependencias:
+   ```bash
+    pip install -r requirements.txt
+   ```
+
+#### Ejecución:
+Clasificaciones en tiempo real:
+
+```bash
+python real_time_predictions.py
+```
+
 
